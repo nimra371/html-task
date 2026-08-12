@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Clicker game</title>
+      <style>
+        h1 {
+            font-size: 60px;
+            margin-bottom: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 18px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        #increase {
+            background-color: green;
+            color: white;
+        }
+
+        #decrease {
+            background-color: red;
+            color: white;
+        }
+    </style>
+
+</head>
+<body>
+
+<div class="container">
+    <h1>My Clicker Game</h1>
+    <h2 id="count">0</h2>
+
+    <button id="increase">Increase</button>
+    <button id="decrease">Decrease</button>
+</div>
+
+<script>
+    let count = 0;
+    const countDisplay = document.getElementById("count");
+
+    document.getElementById("increase").addEventListener("click", () => {
+        count++;
+        countDisplay.textContent = count;
+    });
+
+    document.getElementById("decrease").addEventListener("click", () => {
+        count--;
+        countDisplay.textContent = count;
+    });
+</script>
+
+</body>
+</html>
