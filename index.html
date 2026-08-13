@@ -1,58 +1,105 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Clicker game</title>
-      <style>
-        h1 {
-            font-size: 60px;
-            margin-bottom: 20px;
-        }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instagram clone</title>
+    <link rel="stylesheet" href="style.css" />
 
-        button {
-            padding: 10px 20px;
-            font-size: 18px;
-            margin: 10px;
-            border: none;
-            border-radius: 5px;
-        }
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Edu+NSW+ACT+Cursive:wght@400..700&family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="heading">
+        <h1>Instagram</h1>
+      </div>
+      <div class="items">
+        <span class="material-symbols-outlined"> home </span> Home
+      </div>
+      <div class="items">
+        <span class="material-symbols-outlined"> search </span> Search
+      </div>
+      <div class="items">
+        <span class="material-symbols-outlined"> explore </span> Explore
+      </div>
+      <div class="items">
+        <span class="material-symbols-outlined"> video_library </span> Reels
+      </div>
+      <div class="items">
+        <span class="material-symbols-outlined"> message </span> Messages
+      </div>
+      <div class="items">
+        <span class="material-symbols-outlined"> notifications </span>
+        Notifications
+      </div>
+      <div class="items">
+        <span class="material-symbols-outlined"> create </span> Create
+      </div>
+      <div class="items">
+        <span class="material-symbols-outlined"> person </span> Profile
+      </div>
+      <div class="items">
+        <span class="material-symbols-outlined"> menu </span> More
+      </div>
+    </div>
 
-        #increase {
-            background-color: green;
-            color: white;
-        }
-
-        #decrease {
-            background-color: red;
-            color: white;
-        }
-    </style>
-
-</head>
-<body>
-
-<div class="container">
-    <h1>My Clicker Game</h1>
-    <h2 id="count">0</h2>
-
-    <button id="increase">Increase</button>
-    <button id="decrease">Decrease</button>
-</div>
-
-<script>
-    let count = 0;
-    const countDisplay = document.getElementById("count");
-
-    document.getElementById("increase").addEventListener("click", () => {
-        count++;
-        countDisplay.textContent = count;
-    });
-
-    document.getElementById("decrease").addEventListener("click", () => {
-        count--;
-        countDisplay.textContent = count;
-    });
-</script>
-
-</body>
+    <div class="maincontent">
+      <div class="story">
+        <div class="profile">
+          <img class="storyimg" src="./images/em0rix-fashion-10368845.jpg" alt="Story 1" />
+          <p>Emma</p>
+        </div>
+        <div class="profile">
+          <img class="storyimg" src="./images/parrot-1218241__480.jpg" alt="Story 1" />
+          <p>David</p>
+        </div>
+        <div class="profile">
+          <img class="storyimg" src="./images/corcovado-5404701__480.jpg" alt="Story 1" />
+          <p>Maria</p>
+        </div>
+        <div class="profile">
+          <img class="storyimg" src="./images/music-7101988__480.jpg" alt="Story 1" />
+          <p>Ella</p>
+        </div>
+        <div class="profile">
+          <img class="storyimg" src="./images/dpaolaphoto-ipanema-10117989__480.jpg" alt="Story 1"/>
+          <p>Emil</p>
+        </div>
+        <div class="profile">
+          <img class="storyimg" src="./images/child-5007152__480.jpg" alt="Story 1" />
+          <p>Anel</p>
+        </div>
+        <div class="profile">
+          <img class="storyimg" src="./images/dpaolaphoto-ipanema-10117989__480.jpg" alt="Story 1"/>
+          <p>Zaviar</p>
+        </div>
+        <div class="profile">
+          <img class="storyimg" src="./images/jupilu-wedding-10119100_1920.jpg" alt="Story 1" />
+          <p>Nimra</p>
+        </div>
+        <div class="profile">
+          <img class="storyimg" src="./images/4b3873c070adb210.png" alt="Story 1" />
+          <p>Kevin</p>
+        </div>
+        </div>
+      <div class="post">
+        <img class="storyimg" src="./images/parrot-1218241__480.jpg" alt="Story 1" />
+        <p>David</p>
+        <img src="./images/child-5007152__480.jpg" alt="Post 1" />
+      </div>
+      </div>
+    </div>
+    <div class="leftbar">
+      <h1>Left Sidebar</h1>
+    </div>
+  </body>
 </html>
