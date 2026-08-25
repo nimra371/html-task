@@ -1,12 +1,19 @@
 body{
-    background-color: black;
+    background-color: rgb(42, 97, 198);
     color: white;
     display: flex;
+    margin: 0;
+    padding: 0;
+
 }
 .sidebar{
+    background-color: black;
     height: 100vh;
     width: 18%;
-    border-right: 1px solid #50494d;
+    border-right: 1px solid #504949;
+}
+.content{
+    padding: 3px;
 }
 
 .sidebar h1{
@@ -22,40 +29,46 @@ body{
 }
 
 .maincontent{
+    background-color: rgb(211, 112, 128);;
     height: 100vh;
     width: 55%;
-    padding: 20px;
+
 }
 .maincontent .story{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-top: 10px;
 }
 .maincontent .story .profile{
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 0px;
 }
 .storyimg{
     height: 50px;
     width: 50px;
     border-radius: 50%;
-    padding: 3px;
+    padding: 2px;
     border: 2px solid white;
+    margin: 0px;
 }
 
 .names{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    font-size: 14px;
+    font-size: 10px;
 }
 .maincontent .post img{
-    width: 80%;
+    width: 500px;
     height: 300px;
+    padding: 30px;
 }
 
 .leftbar{
+    background-color: rgb(19, 166, 61);
     width: 25%;
     height: 100vh;    
 }
